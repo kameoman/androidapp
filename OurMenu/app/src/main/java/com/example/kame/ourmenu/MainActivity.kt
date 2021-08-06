@@ -79,6 +79,47 @@ class MainActivity : AppCompatActivity() {
                 menuText.text = getString(R.string.hiyashi_text)
                 return true
             }
+            R.id.oden -> {
+                menuImage.setImageResource(R.drawable.oden)
+                menuText.text = getString(R.string.oden_text)
+                return true
+            }
+            R.id.oden -> {
+                menuImage.setImageResource(R.drawable.oden)
+                menuText.text = getString(R.string.oden_text)
+                return true
+            }
+            R.id.osyarenabe -> {
+                menuImage.setImageResource(R.drawable.osyarenabe)
+                menuText.text = getString(R.string.osyarenabe_text)
+                return true
+            }
+            R.id.beefbowl -> {
+                menuImage.setImageResource(R.drawable.beefbowl)
+                menuText.text = getString(R.string.beefbowl_text)
+                return true
+            }
+            R.id.peperoncino -> {
+                menuImage.setImageResource(R.drawable.peperoncino)
+                menuText.text = getString(R.string.peperoncino_text)
+                return true
+            }
+            R.id.hiroshima -> {
+                menuImage.setImageResource(R.drawable.hiroshima)
+                menuText.text = getString(R.string.hiroshima_text)
+                return true
+            }
+            R.id.hayashi -> {
+                menuImage.setImageResource(R.drawable.hayashi)
+                menuText.text = getString(R.string.hayashi_text)
+                return true
+            }
+            R.id.ankake -> {
+                menuImage.setImageResource(R.drawable.ankake)
+                menuText.text = getString(R.string.ankake_text)
+                return true
+            }
+
 
 
         }
