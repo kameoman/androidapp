@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
                 val subject = getString(R.string.app_name)
                 // ${...} ...に式を埋め込める
                 val text = "${menuText.text}がたべたい！"
-                val uri = Uri.fromParts("mailto", "kanehiro@gmail.com", null)
+                val uri = Uri.fromParts("mailto", "spiderman.935963@gmail.com", null)
                 val intent = Intent(Intent.ACTION_SENDTO, uri)
                 intent.putExtra(Intent.EXTRA_SUBJECT, subject)
                 intent.putExtra(Intent.EXTRA_TEXT, text)
