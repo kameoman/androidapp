@@ -1,5 +1,7 @@
 package com.example.kame.ourmenu
 
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.ContextMenu
@@ -22,6 +24,39 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    override fun onContextItemSelected(item: MenuItem): Boolean {
+        when (item?.itemId) {
+            R.id.mail -> {
+                val subject = getString(R.string.app_name)
+                // ${...} ...に式を埋め込める
+                val text = "${menuText.text}がたべたい！"
+                val uri = Uri.fromParts("mailto", "kanehiro@gmail.com", null)
+                val intent = Intent(Intent.ACTION_SENDTO, uri)
+                intent.putExtra(Intent.EXTRA_SUBJECT, subject)
+                intent.putExtra(Intent.EXTRA_TEXT, text)
+                // resolveActivityメソッド　インテントを処理できるアプリが存在する場合は、
+                // コンポーネント名を返し、ない場合はnullを返す
+                if (intent.resolveActivity(packageManager) != null) {
+                    startActivity(intent)
+                }
+                return true
+            }
+            R.id.sms -> {
+                val text = "${menuText.text}がたべたい！"
+                val uri = Uri.fromParts("smsto", "08061244722", null)
+                val intent = Intent(Intent.ACTION_SENDTO, uri)
+                intent.putExtra("sms_body", text)
+                // resolveActivityメソッド　インテントを処理できるアプリが存在する場合は、
+                // コンポーネント名を返し、ない場合はnullを返す
+                if (intent.resolveActivity(packageManager) != null) {
+                    startActivity(intent)
+                }
+                return true
+            }
+        }
+        return super.onContextItemSelected(item)
+
+    }
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.main, menu)
         return true
