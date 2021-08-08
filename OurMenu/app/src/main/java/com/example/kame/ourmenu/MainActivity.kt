@@ -164,6 +164,11 @@ class MainActivity : AppCompatActivity() {
                 menuText.text = getString(R.string.ankake_text)
                 return true
             }
+            R.id.hamburg -> {
+                menuImage.setImageResource(R.drawable.hamburg)
+                menuText.text = "ハンバーグ"
+                return true
+            }
 
 
 

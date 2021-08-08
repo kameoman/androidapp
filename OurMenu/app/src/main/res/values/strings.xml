@@ -26,4 +26,6 @@
     <string name="baigai_text">バイ貝煮付け</string>
     <string name="mail_text">メールする</string>
     <string name="sms_text">SMSする</string>
+    <string name="beef">お肉のおかず</string>
+    <string name="hamburg">ハンバーグ</string>
 </resources>
