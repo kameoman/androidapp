@@ -9,6 +9,9 @@
             <item
                 android:id="@+id/hamburg"
                 android:title="@string/hamburg" />
+            <item
+                android:id="@+id/grilledginger"
+                android:title="@string/grilledginger" />
         </menu>
     </item>
     <item
