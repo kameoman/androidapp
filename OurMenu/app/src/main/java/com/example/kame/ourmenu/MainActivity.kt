@@ -179,6 +179,11 @@ class MainActivity : AppCompatActivity() {
                 menuText.text = "冷しゃぶ"
                 return true
             }
+            R.id.fridechicken -> {
+                menuImage.setImageResource(R.drawable.friedchicken)
+                menuText.text = "から揚げ"
+                return true
+            }
 
 
 

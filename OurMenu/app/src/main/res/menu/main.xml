@@ -15,6 +15,9 @@
             <item
                 android:id="@+id/coolbeef"
                 android:title="@string/coolbeef" />
+            <item
+                android:id="@+id/fridechicken"
+                android:title="@string/friedchicken" />
         </menu>
     </item>
     <item
