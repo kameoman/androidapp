@@ -1,7 +1,6 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
-    id 'kotlin-android-extensions'
 }
 
 android {
@@ -9,8 +8,8 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.example.kame.sensorget"
-        minSdkVersion 20
+        applicationId "com.example.kame.photoup"
+        minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
